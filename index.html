@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./3.calc.css">
+</head>
+<body>
+ <table class="calculator">
+   <tr>
+    <td colspan="3"><input class="display-box" type="text" id="result"></td>
+    <td> <input type="button" value="C" onclick="removeElemnt(0,-1)"id="b-spc"></td>
+  </tr>
+  <tr>
+    <!-- display() function displays the value of clicked button -->
+    <td> <input type="button" value="1" onclick="dispalyNum(1)"></td>
+    <td> <input type="button" value="2" onclick="dispalyNum(2)"></td>
+    <td> <input type="button" value="3" onclick="dispalyNum(2)"></td>
+    <td> <input type="button" value="/" onclick="dispalyNum('/')"></td>
+  </tr>
+  <td> <input type="button" value="4" onclick="dispalyNum(3)" ></td>
+    <td> <input type="button" value="5" onclick="dispalyNum(4)"></td>
+    <td> <input type="button" value="6" onclick="dispalyNum(5)"></td>
+    <td> <input type="button" value="*" onclick="dispalyNum('*')"></td>
+  </tr>
+  <td><input type="button" value="7" onclick="dispalyNum(7)"></td>
+    <td> <input type="button" value="8" onclick="dispalyNum(8)"></td>
+    <td> <input type="button" value="9" onclick="dispalyNum(9)"></td>
+    <td> <input type="button" value="-" onclick="dispalyNum('-')"></td>
+  </tr>
+  <td><input type="button" value="0" onclick="dispalyNum(0)"></td>
+    <td> <input type="button" value="AC" onclick="allclear()"> </td>
+    <td> <input type="button" value="+" onclick="dispalyNum('+')"></td>
+    <td> <input type="button" value="=" onclick="evaluateExp()"></td>
+  </tr>
+</body>
+<script src="./3.calc.js"></script>
+</html>
+<div></div>
